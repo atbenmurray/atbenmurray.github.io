@@ -22,17 +22,23 @@
           <nav class="main-nav">
             <ul>
               <li>
-                <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
+                <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+              </li>
               <li>
-                <li>art</li>
-                <li>
-                  <a
-                     href="biomorpha.html"
-                     {% if page.url == "/biomorpha.html" %}class="active"{% endif %}
-                  >
-                    Biomorpha
-                  </a>
-                </li>
+                <a
+                   href="biomorpha.html"
+                   {% if page.url == "/biomorpha.html" %}class="active"{% endif %}
+                >
+                  Biomorpha
+                </a>
+              </li>
+              <li>
+                <a
+                   href="programming.html"
+                   {% if page.url == "/programming.html" %}class="active"{% endif %}
+                >
+                  Programming
+                </a>
               </li>
             </ul>
           </nav>
