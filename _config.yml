@@ -1,3 +1,5 @@
+repository: jakedanger/jakedanger.github.io
 theme: jekyll-theme-tactile
 title: Phenotypica
-permalink: /blog/:year/:month/:day/:title
+include: ['_pages']
+permalink: date
