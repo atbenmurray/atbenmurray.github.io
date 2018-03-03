@@ -19,6 +19,7 @@
         <header>
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+          <!--
           <nav class="main-nav">
             <ul>
               <li>
@@ -55,6 +56,25 @@
               </li>
             </ul>
           </nav>
+          -->
+          <div class="topmenu-navbar">
+            <a href="{{site.url}}/blog.html" {% if page.url == "blog.html" %} class="active" {% endif %}>
+              Blog
+            </a>
+            <div class="topmenu-dropdown">
+              <button class="topmenu-dropbtn">
+                Projects
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="topmenu-dropdown-content">
+                <a href="{{site.url}}/biomorpha.html" {% if page.url == "biomorpha.html" %} class="active" {% endif %}>
+                  Biomorpha
+                </a>
+                <a href="{{site.url}}/metagenome.html" {% if page.url == "metagenome.html" %} class="active" {% endif %}>
+                  Metagenome
+                </a>
+              </div>
+            </div>
         </header>
         <!--<section id="downloads" class="clearfix">
           {% if site.show_downloads %}
