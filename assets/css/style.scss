@@ -24,3 +24,64 @@ nav.main-nav li a {
 a.active {
 	color: #FFE000;
 }
+
+.topmenu-navbar {
+  overflow: hidden;
+  background-color: #333
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topmenu-navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topmenu-dropdown {
+  float: left;
+  overflow:hidden;
+}
+
+.topmenu-dropdown .topmenu-dropbtn {
+  font-size: 16px
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topmenu-navbar a:hover, .topmenu-dropdown:hover .topmenu-dropbtn {
+  background-color: red;
+}
+
+.topmenu-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.topmenu-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topmenu-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.topmenu-dropdown:hover .dropdown-content {
+  display: block;
+}
