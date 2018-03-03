@@ -23,14 +23,6 @@
             <ul>
               <li>
                 <a
-                  href="blog.html"
-                  {% if page.url == "blog.html" %}class="active"{% endif %}
-                >
-                  The_Blog 1
-                </a>
-              </li>
-              <li>
-                <a
                    href="{{site.url}}/metagenome.html"
                    {% if page.url == "/metagenome.html" %}class="active"{% endif %}
                 >
@@ -43,6 +35,22 @@
                    {% if page.url == "/biomorpha.html" %}class="active"{% endif %}
                 >
                   Biomorpha
+                </a>
+              </li>
+              <li>
+                <a
+                   href="{{site.url}}/cryptic.html"
+                   {% if page.url == "/cryptic.html" %}class="active"{% endif %}
+                >
+                  Cryptic: Art and Science
+                </a>
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  {% if page.url == "blog.html" %}class="active"{% endif %}
+                >
+                  Blog
                 </a>
               </li>
             </ul>
