@@ -15,48 +15,9 @@
   <body>
     <div id="container">
       <div class="inner">
-
         <header>
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-          <!--
-          <nav class="main-nav">
-            <ul>
-              <li>
-                <a
-                   href="{{site.url}}/metagenome.html"
-                   {% if page.url == "/metagenome.html" %}class="active"{% endif %}
-                >
-                  Metagenome
-                </a>
-              </li>
-              <li>
-                <a
-                   href="{{site.url}}/biomorpha.html"
-                   {% if page.url == "/biomorpha.html" %}class="active"{% endif %}
-                >
-                  Biomorpha
-                </a>
-              </li>
-              <li>
-                <a
-                   href="{{site.url}}/cryptic.html"
-                   {% if page.url == "/cryptic.html" %}class="active"{% endif %}
-                >
-                  Cryptic: Art and Science
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{{site.url}}/blog.html"
-                  {% if page.url == "blog.html" %}class="active"{% endif %}
-                >
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </nav>
-          -->
           <div class="topmenu-navbar">
             <div class="topmenu-dropdown">
               <button class="topmenu-dropbtn">Projects
@@ -71,11 +32,24 @@
                 </a>
               </div>
             </div>
-            <a href="{{site.url}}/cryptic.html" {% if page.url == "blog.html" %} class="active" {% endif %}>
-              Curation
-            </a>
+            <div class="topmenu-dropdown">
+              <button class="topmenu-dropbtn">Curation
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="topmenu-dropdown-content">
+                <a href="{{site.url}}/cryptic2016.html" {% if page.url == "cryptic2016.html" %} class="active" {% endif %}>
+                  Cryptic 2016
+                </a>
+                <a href="{{site.url}}/cryptic2017.html" {% if page.url == "cryptic2017.html" %} class="active" {% endif %}>
+                  Cryptic 2017
+                </a>
+              </div>
+            </div>
             <a href="{{site.url}}/blog.html" {% if page.url == "blog.html" %} class="active" {% endif %}>
               Blog
+            </a>
+            <a href="{{site.url}}/bio.html" {% if page.url == "blog.html" %} class="active" {% endif %}>
+              Bio
             </a>
           </div>
         </header>
