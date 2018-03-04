@@ -58,12 +58,6 @@
           </nav>
           -->
           <div class="topmenu-navbar">
-            <a href="{{site.url}}/blog.html" {% if page.url == "blog.html" %} class="active" {% endif %}>
-              Blog
-            </a>
-            <a href="{{site.url}}/cryptic.html" {% if page.url == "blog.html" %} class="active" {% endif %}>
-              Cryptic
-            </a>
             <div class="topmenu-dropdown">
               <button class="topmenu-dropbtn">Projects
                 <i class="fa fa-caret-down"></i>
@@ -77,6 +71,13 @@
                 </a>
               </div>
             </div>
+            <a href="{{site.url}}/cryptic.html" {% if page.url == "blog.html" %} class="active" {% endif %}>
+              Curation
+            </a>
+            <a href="{{site.url}}/blog.html" {% if page.url == "blog.html" %} class="active" {% endif %}>
+              Blog
+            </a>
+          </div>
         </header>
         <!--<section id="downloads" class="clearfix">
           {% if site.show_downloads %}
