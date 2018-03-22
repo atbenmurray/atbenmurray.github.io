@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "{{site.url}}/assets/css/theme.scss";
+//@import "{{site.url}}/assets/css/theme.scss";
+@import "{{ site.theme }}"
 
 
 nav.main-nav ul {
