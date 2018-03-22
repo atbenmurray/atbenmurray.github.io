@@ -5,6 +5,12 @@
 @import "{{ site.theme }}";
 
 
+// overrides to style
+.inner {
+	width: 960px;
+}
+
+
 nav.main-nav ul {
 	margin: 0;
 	padding: 0;
