@@ -6,3 +6,6 @@ docs:
 
 - title: Metagenome
   url: metagenome.html
+
+- title: Confined Mutations
+  url: projects/confined_mutations/index.html
