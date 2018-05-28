@@ -57,9 +57,20 @@
             <a href="{{site.url}}/purchase.html" {% if page.url == "purchase.html" %} class="active" {% endif %}>
               Purchase
             </a>
-            <a href="{{site.url}}/upcoming.html" {% if page.url == "upcoming.html" %} class="active" {% endif %}>
+            <!-- <a href="{{site.url}}/upcoming.html" {% if page.url == "upcoming.html" %} class="active" {% endif %}>
               Upcoming Events
-            </a>
+            </a> -->
+            <div class="topmenu-dropdown">
+              <button class="topmenu-dropbtn">Events
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="topmenu-dropdown-content">
+                {% for item in site.data.eventlist.docs %}
+                  <a href="{{site.url}}/{{item.url}}">
+                    {{item.title}}
+                  </a>
+                {% endfor %}
+              </div>
           </div>
         </header>
         <!--<section id="downloads" class="clearfix">
