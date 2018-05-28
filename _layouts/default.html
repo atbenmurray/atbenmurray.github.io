@@ -28,12 +28,17 @@
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="topmenu-dropdown-content">
-                <a href="{{site.url}}/biomorpha.html" {% if page.url == "biomorpha.html" %} class="active" {% endif %}>
+                {% for item in site.data.projectlist.docs %}
+                  <a href="{{site.url}}/{{item.url}}">
+                    {{item.title}}
+                  </a>
+                {% endfor %}
+                <!-- <a href="{{site.url}}/biomorpha.html" {% if page.url == "biomorpha.html" %} class="active" {% endif %}>
                   Biomorpha
                 </a>
                 <a href="{{site.url}}/metagenome.html" {% if page.url == "metagenome.html" %} class="active" {% endif %}>
                   Metagenome
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="topmenu-dropdown">
