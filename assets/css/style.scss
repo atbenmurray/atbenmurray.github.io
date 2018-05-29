@@ -40,7 +40,7 @@ a.active {
   display: block;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .general-left-image {
     padding: 20px;
     float: left;
