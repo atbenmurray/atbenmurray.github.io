@@ -72,11 +72,16 @@
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="topmenu-dropdown-content">
-                {% for item in site.data.eventlist.docs %}
-                  <a href="{{site.url}}/{{item.url}}">
-                    {{item.title}}
-                  </a>
-                {% endfor %}
+                <button class="topmenu-dropdown">Events
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="topmenu-dropdown-content">
+                  {% for item in site.data.eventlist.docs %}
+                    <a href="{{site.url}}/{{item.url}}">
+                      {{item.title}}
+                    </a>
+                  {% endfor %}
+                </div>
               </div>
             </div>
           </div>
