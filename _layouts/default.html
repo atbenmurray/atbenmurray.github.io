@@ -71,17 +71,24 @@
               <button class="topmenu-dropbtn">Events
                 <i class="fa fa-caret-down"></i>
               </button>
-              <div class="topmenu-dropdown-content">
-                <button class="topmenu-dropbtn">Past Events
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="topmenu-dropdown-content">
-                  {% for item in site.data.eventlist.docs %}
-                    <a href="{{site.url}}/{{item.url}}">
-                      {{item.title}}
-                    </a>
-                  {% endfor %}
-                </div>
+              <div class="topmenu-dropdown-content">">
+                {% for item in site.data.eventlist.docs %}
+                  <a href="{{site.url}}/{{item.url}}">
+                    {{item.title}}
+                  </a>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="topmenu-dropdown">
+              <button class="topmenu-dropbtn">PastEvents
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="topmenu-dropdown-content">">
+                {% for item in site.data.pasteventlist.docs %}
+                  <a href="{{site.url}}/{{item.url}}">
+                    {{item.title}}
+                  </a>
+                {% endfor %}
               </div>
             </div>
           </div>
