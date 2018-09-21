@@ -37,14 +37,6 @@ a.active {
   text-align: center;
 }
 
-.general-centred-image {
-  margin-left: auto;
-  margin-right: auto;
-  //border: 1px solid red;
-  display: block;
-  padding: 10px;
-}
-
 .embedded-video-div {
     text-align: center;
     //border: 1px solid red;
@@ -59,6 +51,14 @@ a.active {
 // }
 
 @media screen and (max-width: 767px) {
+  .general-centred-image {
+    margin-left: auto;
+    margin-right: auto;
+    //border: 1px solid red;
+    display: block;
+    padding: 10px;
+  }
+
   .general-left-image {
     margin-left: auto;
     margin-right: auto;
@@ -67,6 +67,14 @@ a.active {
 }
 
 @media screen and (min-width: 420px) and (min-width: 768px) {
+  .general-centred-image {
+    margin-left: auto;
+    margin-right: auto;
+    //border: 1px solid red;
+    display: block;
+    padding: 10px;
+  }
+
   .general-left-image {
     padding: 20px;
     float: left;
@@ -75,7 +83,8 @@ a.active {
 
 @media screen and (max-width: 419px) {
   .general-centred-image {
-    width: 100%
+    width: 100%;
+    border: 1px solid red;
   }
 }
 
