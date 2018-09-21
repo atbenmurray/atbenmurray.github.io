@@ -45,13 +45,6 @@ a.active {
   padding: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .general-left-image {
-    padding: 20px;
-    float: left;
-  }
-}
-
 .embedded-video-div {
     text-align: center;
     //border: 1px solid red;
@@ -70,6 +63,18 @@ a.active {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+}
+
+@media screen and (min-width: 420px) and (min-width: 768px) {
+  .general-left-image {
+    padding: 20px;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .general-centred-image {
   }
 }
 
