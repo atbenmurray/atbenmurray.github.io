@@ -7,6 +7,11 @@
 
 
 // overrides to style
+
+body {
+  text-shadow: none
+}
+
 .inner {
  	max-width: $site_width;
 	width: 94%;
