@@ -2,12 +2,13 @@
 ---
 
 //@import "{{site.url}}/assets/css/theme.scss";
+@import 'variables';
 @import "{{ site.theme }}";
 
 
 // overrides to style
 .inner {
- 	max-width: 960px;
+ 	max-width: $site_width;
 	width: 94%;
  }
 
@@ -60,14 +61,14 @@ a.active {
 @media only screen and (max-width: 449px) {
   .general-centred-image {
     width: 100%;
-    //border: 1px solid red;
     display: block;
+    //border: 1px solid green;
   }
 
   .general-left-image {
     padding: 20px;
     float: left;
-    //border: 1px solid red;
+    //border: 1px solid green;
   }}
 
 
@@ -75,9 +76,9 @@ a.active {
   .general-centred-image {
     margin-left: auto;
     margin-right: auto;
-    //border: 1px solid blue;
     display: block;
     padding: 10px;
+    //border: 1px solid blue;
   }
 
   .general-left-image {
@@ -92,15 +93,16 @@ a.active {
   .general-centred-image {
     margin-left: auto;
     margin-right: auto;
-    //border: 1px solid red;
     display: block;
     padding: 10px;
+    //border: 1px solid red;
   }
 
   .general-left-image {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    //border: 1px solid red;
   }
 }
 

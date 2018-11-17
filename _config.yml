@@ -3,3 +3,5 @@ theme: jekyll-theme-tactile
 title: Phenotypica
 include: ['_pages']
 permalink: date
+sass:
+  sass_dir: ./assets/css
