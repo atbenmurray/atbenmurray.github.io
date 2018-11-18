@@ -9,7 +9,13 @@
 // overrides to style
 
 body {
-  text-shadow: none
+  text-shadow: none;
+}
+
+figcaption {
+  text-align: center;
+  margin-bottom: 15px;
+  font-style: italic;
 }
 
 .inner {
@@ -62,6 +68,26 @@ a.active {
 //   display: block;
 // }
 
+.iframe-container {
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   position: absolute;
+   border: 0;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+}
+
+/* 4x3 Aspect Ratio */
+.iframe-container-560x315 {
+  padding-top: 59.4%;
+}
 
 @media only screen and (max-width: 449px) {
   .general-centred-image {
@@ -74,8 +100,22 @@ a.active {
     padding: 20px;
     float: left;
     //border: 1px solid green;
-  }}
+  }
 
+  .images-horizontal-clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    box-sizing: border-box;
+  }
+
+  .three-images-horizontal {
+    float: left;
+    width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+    padding: 5px; /* if you want space between the images */
+    box-sizing: border-box;
+  }
+}
 
 @media only screen and (min-width: 450px) and (max-width: 767px) {
   .general-centred-image {
@@ -91,15 +131,39 @@ a.active {
     float: left;
     //border: 1px solid blue;
   }
+
+  .images-horizontal-clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    box-sizing: border-box;
+  }
 }
 
 
 @media only screen and (min-width: 768px) {
+  div.two-column {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+    // -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    // -moz-column-rule-style: solid; /* Firefox */
+    // column-rule-style: solid;
+    // -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    // -moz-column-rule-width: 1px; /* Firefox */
+    // column-rule-width: 1px;
+  }
+
   .general-centred-image {
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
     display: block;
     padding: 10px;
+    margin: 10px auto 0px auto;
+    width: 80%;
     //border: 1px solid red;
   }
 
@@ -108,6 +172,13 @@ a.active {
     margin-right: auto;
     display: block;
     //border: 1px solid red;
+  }
+
+  .images-horizontal-clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    box-sizing: border-box;
   }
 }
 
