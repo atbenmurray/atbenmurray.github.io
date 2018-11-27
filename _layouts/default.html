@@ -19,81 +19,95 @@
     <div id="container">
       <div class="inner">
         <header>
+          <!--<h1>{{ site.title | default: site.github.repository_name }}</h1>-->
+          <!--<h2>{{ site.description | default: site.github.project_tagline }}</h2>-->
           <a href="{{site.url}}/index.html">
             <img class="general-centred-image" src="{{site.url}}/assets/images/phenotypica_logo_v3_no_bg.png"
-            height="60%" width="60%"/>
+            style="width:40%"/>
           </a>
-          <!--<h1>{{ site.title | default: site.github.repository_name }}</h1>-->
-          <h2>{{ site.description | default: site.github.project_tagline }}</h2>
           <div class="topmenu-navbar">
-            <div class="topmenu-dropdown">
-              <button class="topmenu-dropbtn">Projects
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="topmenu-dropdown-content">
-                {% for item in site.data.projectlist.docs %}
-                  <a href="{{site.url}}/{{item.url}}">
-                    {{item.title}}
-                  </a>
-                {% endfor %}
-                <!-- <a href="{{site.url}}/biomorpha.html" {% if page.url == "biomorpha.html" %} class="active" {% endif %}>
-                  Biomorpha
-                </a>
-                <a href="{{site.url}}/metagenome.html" {% if page.url == "metagenome.html" %} class="active" {% endif %}>
-                  Metagenome
-                </a> -->
-              </div>
-            </div>
-            <div class="topmenu-dropdown">
-              <button class="topmenu-dropbtn">Curation
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="topmenu-dropdown-content">
-                <a href="{{site.url}}/cryptic2017.html" {% if page.url == "cryptic2017.html" %} class="active" {% endif %}>
-                  Cryptic 2017
-                </a>
-                <a href="{{site.url}}/cryptic2016.html" {% if page.url == "cryptic2016.html" %} class="active" {% endif %}>
-                  Cryptic 2016
-                </a>
-              </div>
-            </div>
+            <ul class="main-nav">
+              <li class="main-nav">
+                <div class="topmenu-dropdown">
+                  <button class="topmenu-dropbtn">Projects
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="topmenu-dropdown-content">
+                    {% for item in site.data.projectlist.docs %}
+                      <a href="{{site.url}}/{{item.url}}">
+                        {{item.title}}
+                      </a>
+                    {% endfor %}
+                    <!-- <a href="{{site.url}}/biomorpha.html" {% if page.url == "biomorpha.html" %} class="active" {% endif %}>
+                      Biomorpha
+                    </a>
+                    <a href="{{site.url}}/metagenome.html" {% if page.url == "metagenome.html" %} class="active" {% endif %}>
+                      Metagenome
+                    </a> -->
+                  </div>
+                </div>
+              </li>
+              <li class="main-nav">
+                <div class="topmenu-dropdown">
+                  <button class="topmenu-dropbtn">Curation
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="topmenu-dropdown-content">
+                    <a href="{{site.url}}/cryptic2017.html" {% if page.url == "cryptic2017.html" %} class="active" {% endif %}>
+                      Cryptic 2017
+                    </a>
+                    <a href="{{site.url}}/cryptic2016.html" {% if page.url == "cryptic2016.html" %} class="active" {% endif %}>
+                      Cryptic 2016
+                    </a>
+                  </div>
+                </div>
+              </li>
             <!--<a href="{{site.url}}/blog.html" {% if page.url == "blog.html" %} class="active" {% endif %}>
               Blog
             </a>-->
             <!--<a href="{{site.url}}/assets/images/Phenotypica_CV_March_2018.pdf">-->
-            <a href= "{{site.url}}/bio.html" {% if page.url == "bio.html" %} class="active" {% endif %}>
-              About
-            </a>
-            <a href="{{site.url}}/purchase.html" {% if page.url == "purchase.html" %} class="active" {% endif %}>
-              Purchase
-            </a>
+              <li class="main-nav">
+                <a href= "{{site.url}}/bio.html" {% if page.url == "bio.html" %} class="active" {% endif %}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="{{site.url}}/purchase.html" {% if page.url == "purchase.html" %} class="active" {% endif %}>
+                  Purchase
+                </a>
+              </li>
             <!-- <a href="{{site.url}}/upcoming.html" {% if page.url == "upcoming.html" %} class="active" {% endif %}>
               Upcoming Events
             </a> -->
-            <div class="topmenu-dropdown">
-              <button class="topmenu-dropbtn">Upcoming / Current Events
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="topmenu-dropdown-content">
-                {% for item in site.data.eventlist.docs %}
-                  <a href="{{site.url}}/{{item.url}}">
-                    {{item.title}}
-                  </a>
-                {% endfor %}
-              </div>
-            </div>
-            <div class="topmenu-dropdown">
-              <button class="topmenu-dropbtn">Past Events
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="topmenu-dropdown-content">
-                {% for item in site.data.pasteventlist.docs %}
-                  <a href="{{site.url}}/{{item.url}}">
-                    {{item.title}}
-                  </a>
-                {% endfor %}
-              </div>
-            </div>
+              <li class="main-nav">
+                <div class="topmenu-dropdown">
+                  <button class="topmenu-dropbtn">Upcoming / Current Events
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="topmenu-dropdown-content">
+                    {% for item in site.data.eventlist.docs %}
+                      <a href="{{site.url}}/{{item.url}}">
+                        {{item.title}}
+                      </a>
+                    {% endfor %}
+                  </div>
+                </div>
+              </li>
+              <li class="main-nav">
+                <div class="topmenu-dropdown">
+                  <button class="topmenu-dropbtn">Past Events
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="topmenu-dropdown-content">
+                    {% for item in site.data.pasteventlist.docs %}
+                      <a href="{{site.url}}/{{item.url}}">
+                        {{item.title}}
+                      </a>
+                    {% endfor %}
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </header>
         <!--<section id="downloads" class="clearfix">

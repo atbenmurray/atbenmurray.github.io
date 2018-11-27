@@ -24,22 +24,26 @@ figcaption {
  }
 
 
-nav.main-nav ul {
-	margin: 0;
+.main-nav ul {
+	margin: 0 auto 0 auto;
 	padding: 0;
 	list-style: none;
 	float: right;
+  text-align: center;
 }
 
-nav.main-nav li,
-nav.main-nav li li,
-nav.main-nav a {
+.main-nav li,
+.main-nav li li,
+.main-nav a {
 	display: inline-block;
+  list-style: none;
+  vertical-align: middle;
+  height: 100%;
 }
 
-nav.main-nav li a {
-	padding: 10px;
-}
+// .main-nav li a {
+// 	padding: 10px;
+// }
 
 a.active {
 	color: #FFE000;
@@ -185,15 +189,18 @@ a.active {
 
 .topmenu-navbar {
   overflow: hidden;
-  background-color: #333;
+  //background-color: #333;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .topmenu-navbar a {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   float: left;
   font-size: 16px;
-  color: white;
+  color: #303030;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -210,7 +217,7 @@ a.active {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: #303030;
   padding: 14px 16px;
   background-color: inherit;
   margin: 0;
