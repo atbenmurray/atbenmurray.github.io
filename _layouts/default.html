@@ -107,7 +107,27 @@
                   </div>
                 </div>
               </li>
-            </ul>
+              <!-- <li>
+                <p>hello@phenotypica.org</p>
+              </li> -->
+              <!-- <li>
+                <img style="margin: 0px 16px;"
+                  src="{{site.url}}/assets/images/facebook-4-256.png"
+                  width="32px" height="32px">
+                </img>
+              </li>
+              <li>
+                <img style="margin: 0px 16px;"
+                  src="{{site.url}}/assets/images/twitter-4-512.png"
+                  width="32px" height="32px">
+                </img>
+              </li> -->
+              <li class="main-nav">
+                <a href= "{{site.url}}/contact.html" {% if page.url == "contact.html" %} class="active" {% endif %}>
+                  Contact
+                </a>
+              </li>
+          </ul>
           </div>
         </header>
         <!--<section id="downloads" class="clearfix">
@@ -125,12 +145,29 @@
         <section id="main_content">
           {{ content }}
         </section>
-
         <footer>
-        {% if site.github.is_project_page %}
+        <!-- {% if site.github.is_project_page %}
           {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
-        {% endif %}
-	  <p class="general-centred-para">Copyright © 2015-2018 Phenotypica (Neus Torres Tamarit and Ben Murray)
+        {% endif %} -->
+
+	        <p class="general-centred-para">Copyright © 2015-2018 Phenotypica (Neus Torres Tamarit and Ben Murray)
+          <div style="text-align: center;">
+            <!-- <div style="margin: 0 auto; width: 20%;"> -->
+            <div style="display: inline-block;">
+              <a href="https://www.facebook.com/phenotypica/">
+                <img style="margin: 0px 16px;"
+                  src="{{site.url}}/assets/images/facebook-4-256.png"
+                  width="48px" height="48px">
+                </img>
+              </a>
+              <a href="https://twitter.com/phenotypica">
+                <img style="margin: 0px 16px;"
+                  src="{{site.url}}/assets/images/twitter-4-512.png"
+                  width="48px" height="48px">
+                </img>
+              </a>
+            </div>
+          </div>
         </footer>
 
       </div>
