@@ -12,6 +12,16 @@ body {
   text-shadow: none;
 }
 
+h1 {
+    color: #303030;
+}
+
+ul li {
+  padding-left: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 figcaption {
   text-align: center;
   margin-bottom: 15px;
@@ -20,7 +30,7 @@ figcaption {
 
 .inner {
  	max-width: $site_width;
-	width: 94%;
+	width: 100%;
  }
 
 
@@ -35,7 +45,7 @@ figcaption {
 .main-nav li,
 .main-nav li li,
 .main-nav a {
-	display: inline-block;
+  display: inline-block;
   list-style: none;
   vertical-align: middle;
   height: 100%;
@@ -93,10 +103,100 @@ a.active {
   padding-top: 59.4%;
 }
 
+.topmenu-navbar {
+  overflow: hidden;
+  //background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.topmenu-navbar a {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  float: left;
+  font-size: 16px;
+  color: #303030;
+  text-align: center;
+  //padding: 14px 16px;
+  text-decoration: none;
+  vertical-align: middle;
+  height: 40px;
+  line-height: 40px;
+}
+
+.topmenu-dropdown {
+  float: left;
+  overflow:hidden;
+}
+
+.topmenu-dropdown .topmenu-dropbtn {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  //text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #303030;
+  padding: 8px 8px;
+  background-color: inherit;
+  //margin: 0;
+  height: 40px;
+}
+
+.topmenu-navbar a:hover, .topmenu-dropdown:hover .topmenu-dropbtn {
+  background-color: red;
+}
+
+.topmenu-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.topmenu-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topmenu-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.topmenu-dropdown:hover .topmenu-dropdown-content {
+  display: block;
+}
+
 @media only screen and (max-width: 449px) {
+  h1 {
+      //color: red;
+      font-size: 120%;
+      text-align: center;
+  }
+  p {
+    font-size: 90%;
+  }
+  .topmenu-dropdown .topmenu-dropbtn {
+    padding: 4px 4px;
+    height: 40px;
+  }
+  .phenotypica-image {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px 10px 0px;
+  }
   .general-centred-image {
     width: 100%;
     display: block;
+    padding: 10px 0px 10px 0px;
     //border: 1px solid green;
   }
 
@@ -122,6 +222,17 @@ a.active {
 }
 
 @media only screen and (min-width: 450px) and (max-width: 767px) {
+  .div.two-column {
+  }
+  
+  .phenotypica-image {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px 10px 0px;  
+  }
+
   .general-centred-image {
     margin-left: auto;
     margin-right: auto;
@@ -161,13 +272,21 @@ a.active {
     // column-rule-width: 1px;
   }
 
+  .phenotypica-image {
+    width: 40%;
+    display: block;
+    padding: 10px 0px 10px 0px;  
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .general-centred-image {
     //margin-left: auto;
     //margin-right: auto;
     display: block;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     margin: 10px auto 0px auto;
-    width: 80%;
+    width: 100%;
     //border: 1px solid red;
   }
 
@@ -184,72 +303,4 @@ a.active {
     display: table;
     box-sizing: border-box;
   }
-}
-
-
-.topmenu-navbar {
-  overflow: hidden;
-  //background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto
-}
-
-.topmenu-navbar a {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  float: left;
-  font-size: 16px;
-  color: #303030;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.topmenu-dropdown {
-  float: left;
-  overflow:hidden;
-}
-
-.topmenu-dropdown .topmenu-dropbtn {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  //text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: #303030;
-  padding: 14px 16px;
-  background-color: inherit;
-  margin: 0;
-  height: 52px;
-}
-
-.topmenu-navbar a:hover, .topmenu-dropdown:hover .topmenu-dropbtn {
-  background-color: red;
-}
-
-.topmenu-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.topmenu-dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.topmenu-dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.topmenu-dropdown:hover .topmenu-dropdown-content {
-  display: block;
 }
