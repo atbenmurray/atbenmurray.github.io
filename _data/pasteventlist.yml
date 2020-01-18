@@ -1,8 +1,11 @@
 docs_list_title: Past Events
 docs:
 
-- title: Norwich Science Festival
-  url: events/2019_10_norwich_science_festival.html
+- title: Norwich Science Festival Exhibition  
+  url: events/2019_10_norwich_science_festival_exhibition.html
+
+- title: Presentation at the FLUX Social 
+  url: events/2019_07_presentation_flux_social.html
 
 - title: Science Museum Lates Exhibition
   url: events/2019_06_science_museum_lates_exhibition.html
