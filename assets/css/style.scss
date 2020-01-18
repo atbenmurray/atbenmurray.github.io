@@ -280,14 +280,20 @@ a.active {
     margin-right: auto;
   }
 
-  .general-centred-image {
-    //margin-left: auto;
-    //margin-right: auto;
+  %general-centred-image-shared {
     display: block;
     padding: 10px 0px 10px 0px;
     margin: 10px auto 0px auto;
     width: 100%;
-    //border: 1px solid red;
+  }
+  
+  .general-centred-image {
+    @extend %general-centred-image-shared;
+  }
+  
+  .general_centred-image-75 {
+    @extend %general-centred-image-shared;
+    width: 75%;
   }
 
   .general-left-image {
