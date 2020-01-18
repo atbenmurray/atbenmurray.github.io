@@ -59,6 +59,14 @@ a.active {
 	color: #FFE000;
 }
 
+div.flex-row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .general-centred-para {
   text-align: center;
 }
@@ -173,6 +181,7 @@ a.active {
   display: block;
 }
 
+
 @media only screen and (max-width: 449px) {
   h1 {
       //color: red;
@@ -193,11 +202,23 @@ a.active {
     margin-right: auto;
     padding: 10px 0px 10px 0px;
   }
+
   .general-centred-image {
+    padding: 10px;
+    box-sizing: border-box;
     width: 100%;
-    display: block;
-    padding: 10px 0px 10px 0px;
-    //border: 1px solid green;
+  }
+  
+  .general-centred-image-75 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .general-centred-image-50 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .general-left-image {
@@ -234,11 +255,22 @@ a.active {
   }
 
   .general-centred-image {
-    margin-left: auto;
-    margin-right: auto;
     display: block;
+    padding: 10px 0px 10px 0px;
+    //margin: 10px auto 0px auto;
+    width: 100%;
+  }
+  
+  .general-centred-image-75 {
     padding: 10px;
-    //border: 1px solid blue;
+    box-sizing: border-box;
+    width: 75%;
+  }
+
+  .general-centred-image-50 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
   }
 
   .general-left-image {
@@ -281,19 +313,36 @@ a.active {
   }
 
   %general-centred-image-shared {
-    display: block;
-    padding: 10px 0px 10px 0px;
-    margin: 10px auto 0px auto;
+    padding: 10px;
+    box-sizing: border-box;
     width: 100%;
   }
   
   .general-centred-image {
-    @extend %general-centred-image-shared;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
   }
   
-  .general_centred-image-75 {
-    @extend %general-centred-image-shared;
+  .general-centred-image-75 {
+    padding: 10px;
+    box-sizing: border-box;
     width: 75%;
+  }
+
+  .general-centred-image-50 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  .general-centred-image-50 {
+    //display: block;
+    padding: 10px;
+    //margin: 10px;
+    //border: 1px solid blue;
+    box-sizing: border-box;
+    width: 50%;
   }
 
   .general-left-image {
