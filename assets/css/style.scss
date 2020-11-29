@@ -1,20 +1,22 @@
 ---
 ---
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+@import url(//fonts.googleapis/com/css?family=Nunito);
+@import url(//fonts.googleapis.com/css?family=Texturina);
 
 //@import "{{site.url}}/assets/css/theme.scss";
 @import 'variables';
-@import "{{ site.theme }}";
-
+//@import "{{ site.theme }}";
+@import 'theme';
 
 // overrides to style
-
 body {
   text-shadow: none;
 }
 
-h1 {
-    color: #303030;
-}
+//h1 {
+//    color: #303030;
+//}
 
 ul li {
   padding-left: 0px;

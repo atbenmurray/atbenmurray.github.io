@@ -1,5 +1,5 @@
 repository: jakedanger/jakedanger.github.io
-theme: jekyll-theme-tactile
+# theme: jekyll-theme-tactile
 title: Phenotypica
 include: ['_pages']
 permalink: date
