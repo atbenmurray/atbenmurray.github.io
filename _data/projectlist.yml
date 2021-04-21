@@ -1,17 +1,20 @@
 docs_list_title: Projects
 docs:
 
-- title: Biomorpha
+- title: Creative Complexity, 2021
+  url: projects/creative_complexity/index.html
+  
+- title: Haploid Selection, 2019 - 2020
+  url: projects/haploid_selection/index.html
+    
+- title: Agonism / Antagonism, 2017 - 2018
+  url: projects/agonism_antagonism/index.html
+
+- title: Biomorpha, 2017
   url: biomorpha.html
 
-- title: Metagenomics in Art
+- title: Metagenomics in Art, 2016 - 2017
   url: metagenome.html
 
-- title: Confined Mutations
+- title: Confined Mutations, 2016
   url: projects/confined_mutations/index.html
-  
-- title: Agonism / Antagonism
-  url: projects/agonism_antagonism/index.html
-  
-- title: Haploid Selection
-  url: projects/haploid_selection/index.html
