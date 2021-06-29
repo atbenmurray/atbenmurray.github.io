@@ -1,12 +1,15 @@
 docs_list_title: Projects
 docs:
 
-- title: Creative Complexity, 2021
+- title: Creative Complexity, 2020 - 2021
   url: projects/creative_complexity/index.html
   
 - title: Haploid Selection, 2019 - 2020
   url: projects/haploid_selection/index.html
     
+- title: Binding Art & Science, a Journey through Drug Design, 2019
+  url: projects/binding_art_science/index.html
+
 - title: Agonism / Antagonism, 2017 - 2018
   url: projects/agonism_antagonism/index.html
 
