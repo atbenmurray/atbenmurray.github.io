@@ -182,6 +182,70 @@ div.flex-row {
   display: block;
 }
 
+.streetart_btn-red, .streetart_btn-blue, .streetart_btn-green {
+  position: absolute;
+  border: solid 2pt #FFFB;
+  //border: none;
+  background-color: transparent;
+  border-radius: 5%;
+  transition: 1s;
+}
+.streetart_btn-red:hover {
+  border: none;
+  background-color: #FBBB;
+}
+.streetart_btn-blue:hover {
+  border: none;
+  background-color: #BFBB;
+}
+.streetart_btn-green:hover {
+  border: none;
+  background-color: #BBFB;
+}
+
+.transparent_until_hover {
+  opacity: 0.0;
+  transition: 1s;
+}
+
+.transparent_until_hover:hover {
+  opacity: 1.0;
+}
+
+.height-limited-image-200 {
+  width: 40%;
+  height: 200px;
+  margin: 20px;
+}
+
+.expanding-image-button {
+  width: 90%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+
+.expanding-image-button:hover {
+  width: 95%;
+}
+
+.gallery-pseudo-bullet-pt {
+  margin: 6px 0px;
+}
+
+.gallery-outer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-column {
+  flex: 48%;
+  max-width: 48%;
+  margin: 4px;
+}
 
 @media only screen and (max-width: 449px) {
   h1 {
@@ -204,12 +268,17 @@ div.flex-row {
     padding: 10px 0px 10px 0px;
   }
 
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
   .general-centred-image {
     padding: 10px;
     box-sizing: border-box;
     width: 100%;
   }
-  
+
   .general-centred-image-75 {
     padding: 10px;
     box-sizing: border-box;
@@ -220,6 +289,7 @@ div.flex-row {
     padding: 10px;
     box-sizing: border-box;
     width: 100%;
+    border: solid 1px #F00;
   }
 
   .general-left-image {
@@ -246,13 +316,13 @@ div.flex-row {
 @media only screen and (min-width: 450px) and (max-width: 767px) {
   .div.two-column {
   }
-  
+
   .phenotypica-image {
     width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 0px 10px 0px;  
+    padding: 10px 0px 10px 0px;
   }
 
   .general-centred-image {
@@ -261,7 +331,7 @@ div.flex-row {
     //margin: 10px auto 0px auto;
     width: 100%;
   }
-  
+
   .general-centred-image-75 {
     padding: 10px;
     box-sizing: border-box;
@@ -288,7 +358,6 @@ div.flex-row {
   }
 }
 
-
 @media only screen and (min-width: 768px) {
   div.two-column {
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -308,7 +377,7 @@ div.flex-row {
   .phenotypica-image {
     width: 40%;
     display: block;
-    padding: 10px 0px 10px 0px;  
+    padding: 10px 0px 10px 0px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -318,13 +387,13 @@ div.flex-row {
     box-sizing: border-box;
     width: 100%;
   }
-  
+
   .general-centred-image {
     padding: 10px;
     box-sizing: border-box;
     width: 100%;
   }
-  
+
   .general-centred-image-75 {
     padding: 10px;
     box-sizing: border-box;
